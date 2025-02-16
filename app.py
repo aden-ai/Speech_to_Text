@@ -49,7 +49,7 @@ def main():
             temp_audio_path = convert_audio_to_wav(temp_audio_path, file_extension)
 
         # Convert speech to text
-        st.write("🎧 Processing audio ....")
+        st.write("🎧 Processing audio .....")
         text = speech_to_text(temp_audio_path)
 
         #  Display result
