@@ -1,9 +1,10 @@
+import torch
+torch.classes.__path__ = []
 import streamlit as st
 import whisper
 from pydub import AudioSegment
 import tempfile
 import os
-import torch
 
 # Load Whisper model (choose 'base' for fast processing or 'large' for better accuracy)
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
